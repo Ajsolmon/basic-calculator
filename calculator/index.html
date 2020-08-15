@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calculator</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <main>
+        <div id="calcBody">
+            <form name="form">
+                <input name="calcdisp" id="input" autofocus>
+                
+                <input name="ansdisp" id="answer" readonly>
+            </form>
+
+            <div id="numbers">
+                <table>
+                    <tr>
+                        <td class="numb" onclick="insert(7)">7</td>
+                        <td class="numb" onclick="insert(8)">8</td>
+                        <td class="numb" onclick="insert(9)">9</td>
+                        <td class="numb" onclick="insert('+')">+</td>
+                    </tr>
+                    <tr>
+                        <td class="numb" onclick="insert(4)">4</td>
+                        <td class="numb" onclick="insert(5)">5</td>
+                        <td class="numb" onclick="insert(6)">6</td>
+                        <td class="numb" onclick="insert('-')">-</td>
+                    </tr>
+                    <tr>
+                        <td class="numb" onclick="insert(1)">1</td>
+                        <td class="numb" onclick="insert(2)">2</td>
+                        <td class="numb" onclick="insert(3)">3</td>
+                        <td class="numb" onclick="insert('*')">*</td>
+                    </tr>
+                    <tr>
+                        <td class="numb" onclick="clean()">C</td>
+                        <td class="numb" onclick="insert(0)">0</td>
+                        <td class="numb" onclick="equal()">=</td>
+                        <td class="numb" onclick="insert('/')">/</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
